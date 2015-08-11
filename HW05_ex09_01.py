@@ -7,11 +7,17 @@
 # Imports
 
 # Body
-
+def abc():
+	fin = open('words.txt')
+	
+	for line in fin:
+		word = line.strip()	
+		if len(word)>20:
+			print word
 
 ##############################################################################
 def main():
-    pass # Call your functions here.
+    abc()
 
 if __name__ == '__main__':
     main()
